@@ -1,0 +1,297 @@
+.wrapper {
+    width: 100%;
+    font-family: 'Nexa';
+}
+
+.player {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+    background: #d8d8d8;
+    padding: 30px 0 30px 0;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.song_img {
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.song_info {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.song_info__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.song_info__artist {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.progress_box {
+    padding: 0 40px 0 40px;
+}
+
+.progress {
+    height: 6px;
+    border-radius: 25px;
+    accent-color: black;
+    width: 100%;
+    cursor: pointer;
+}
+
+.song_time {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0 40px;
+}
+
+.buttons {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.but {
+    cursor: pointer;
+}
+
+.prev_song_button {
+    margin: 0px 20px 0px 25px;
+}
+
+.next_song_button {
+    margin: 0px 25px 0px 20px;
+}
+
+.song_buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.volume_button {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.artists_pick {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px 25px 15px;
+    background: #515151;
+}
+
+.hat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.artists-pick__hat_name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: white;
+    text-align: center;
+}
+
+.artists {
+    display: grid;
+    row-gap: 15px;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(1, 50px);
+    grid-auto-rows: 50px;
+    margin-top: 15px;
+}
+
+.artists_item {
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.artist_photo {
+    border-radius: 1000px;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+}
+
+.artist_name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* НЕВЕДИМАЯ КНОПКА ДЛЯ ПОДДЕРЖАНИЯ В ЦЕНТРЕ */
+.vb1 {
+    opacity: 0;
+}
+
+.list_of_artists {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+.artist-profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    background: #d8d8d8;
+    display: none;
+}
+
+.artist-profile__photo {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.artist-profile__photo-img {
+    border-radius: 10px;
+}
+
+.artist-profile__back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.artist-profile__name {
+    position: absolute;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    bottom: 10px;
+    left: 15px;
+}
+
+.artist-profile__sections {
+    padding: 0 15px;
+}
+
+.artist-profile__section-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sections-singles {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(2, 45px);
+}
+
+.single {
+    display: flex;
+    /* background-color: pink; */
+    border-radius: 10px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.single-cover__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.single-about {
+    margin-left: 10px;
+    position: relative;
+}
+
+.single-title {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.single-artist {
+    position: absolute;
+    bottom: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+.sections-albums {
+    display: flex;
+    justify-content: space-between;
+}
+
+.album {
+    width: 100px;
+}
+
+.album-cover__img {
+    border-radius: 10px;
+    width: 100px;
+}
+
+.album-title {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.see_all {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
