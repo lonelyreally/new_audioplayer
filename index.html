@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/new_style.css">
+    <title>new_audioplayer</title>
+</head>
+    
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <!-- ПРОФИЛЬ ИСПОЛНИТЕЛЯ -->
+            <div class="artist-profile">
+                <div class="artist-profile__photo">
+                    <img class="artist-profile__back" src="images/back.svg" width="32px" alt="">
+                    <img class="artist-profile__photo-img" src="" width="100%" alt="">
+                    <p class="artist-profile__name">Kai Angel</p>
+                </div>
+                <div class="artist-profile__sections">
+                    <div class="section">
+                        <div class="artist-profile__section-name">Синглы</div>
+                        <img class="see_all" src="images/see all.svg" width="20px" alt="">
+                    </div>
+                    <div class="sections-singles">
+                        <div class="single">
+                            <div class="single-cover1 single-cover"><img class="single-cover__img1 single-cover__img" src="" alt=""></div>
+                                <div class="single-about1 single-about">
+                                    <div class="single-title1 single-title"></div>
+                                    <div class="single-artist1 single-artist"></div>
+                                </div>
+                        </div>
+                        <div class="single">
+                            <div class="single-cover2 single-cover"><img class="single-cover__img2 single-cover__img" src="" alt=""></div>
+                                <div class="single-about2 single-about">
+                                    <div class="single-title2 single-title"></div>
+                                    <div class="single-artist2 single-artist"></div>
+                                </div>
+                        </div>
+                        <div class="single">
+                            <div class="single-cover3 single-cover"><img class="single-cover__img3 single-cover__img" src="" alt=""></div>
+                                <div class="single-about3 single-about">
+                                    <div class="single-title3 single-title"></div>
+                                    <div class="single-artist3 single-artist"></div>
+                                </div>
+                        </div>
+                        <div class="single">
+                            <div class="single-cover4 single-cover"><img class="single-cover__img4 single-cover__img" src="" alt=""></div>
+                                <div class="single-about4 single-about">
+                                    <div class="single-title4 single-title"></div>
+                                    <div class="single-artist4 single-artist"></div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="artist-profile__section-name">Альбомы</div>
+                        <img class="see_all" src="images/see all.svg" width="20px" alt="">
+                    </div>
+                    <div class="sections-albums">
+                        <div class="album">
+                            <div class="album-cover1 album-cover"><img class="album-cover__img1 album-cover__img" src="" alt=""></div>
+                            <div class="album-title1 album-title"></div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover2 album-cover"><img class="album-cover__img2 album-cover__img" src="" alt=""></div>
+                            <div class="album-title2 album-title"></div>
+                        </div>
+                        <div class="album">
+                            <div class="album-cover3 album-cover"><img class="album-cover__img3 album-cover__img" src="" alt=""></div>
+                            <div class="album-title3 album-title"></div>
+                        </div>
+                    </div>
+                </div class="artist-profile__sections">
+            </div>
+            <!-- ИСПОЛНИТЕЛИ В ОТКРЫВАЮЩЕМСЯ ОКНЕ -->
+            <div class="artists_pick">
+                <div class="hat">
+                    <img class="but close_artists" src="images/artists_info__close.svg" alt="">
+                    <div class="artists-pick__hat_name">Исполнители</div>
+                </div>
+                <div class="artists">
+                    <div class="artists_item">
+                        <img class="art_photo1 artist_photo" width="50px" src="" alt="">
+                        <div class="art_name1 artist_name"></div>
+                    </div>
+                    <div class="artists_item">
+                        <img class="art_photo2 artist_photo" width="50px" src="" alt="">
+                        <div class="art_name2 artist_name"></div>
+                    </div>
+                    <div class="artists_item">
+                        <img class="art_photo3 artist_photo" width="50px" src="" alt="">
+                        <div class="art_name3 artist_name"></div>
+                    </div>
+                    <div class="artists_item">
+                        <img class="art_photo4 artist_photo" width="50px" src="" alt="">
+                        <div class="art_name4 artist_name"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ПЕСНЯ В ПЛЕЕРЕ -->
+            <div class="song_cover">
+                <img class="song_img" width="250px" src="" alt="">
+            </div>
+            <div class="song_info">
+                <div class="song_info__title"></div>
+                <div class="list_of_artists"></div>
+            </div>
+            <div class="progress_box">
+                <input class="progress" type="range">
+            </div>
+            <div class="song_time">
+                <p class="current_time"></p>
+                <p class="song_duration"></p>
+            </div>
+            <!-- КНОПОЧКИ -->
+            <div class="buttons">
+                <div class="song_buttons">
+                    <div class="volume_button vb1"><img class="but volume_play_button_1" src="images/volume_play.svg" alt=""></div>
+                    <img class="but mix_songs_button" src="images/mixsongbutton.svg" alt="">
+                    <img class="but prev_song_button" src="images/prevsongbutton.svg" alt="">
+                    <img class="but play_song_button" src="images/playsongbutton.svg" alt="">
+                    <img class="but next_song_button" src="images/nextsongbutton.svg" alt="">
+                    <img class="but repeat_song_button" src="images/repeatsongbutton.svg" alt="">
+                </div>
+                <div class="volume_button"><img class="but volume_play_button" src="images/volume_play1.svg" alt=""></div>
+            </div>
 
+        </div>
+    </div>
+
+
+
+    <script src="java_script/new_main.js"></script>
+</body>
+
+</html>
